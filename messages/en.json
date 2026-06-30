@@ -1,0 +1,71 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "brands": "Brands",
+    "catalogs": "Catalogs",
+    "projects": "Projects",
+    "partners": "Partners",
+    "contact": "Contact",
+    "contact_now": "Contact Now"
+  },
+  "Hero": {
+    "title": "Unique Audio Solutions For You",
+    "subtitle": "Exclusive distributor for K-Array, KGEAR, and KSCAPE in Cyprus, Armenia, Georgia, Kazakhstan and beyond. Request a design for your project or become an integrator."
+  },
+  "Brands": {
+    "karray_desc": "Ultra-compact audio solutions with invisible profiles for discrete integration. High-end professional audio for your house, restaurant, club or anywhere you want to have a unique sound.",
+    "kgear_desc": "High-performance everyday audio gear maximizing value without compromising quality. Cafes, restaurants and clubs have a wider range of choices, offering flexibility, simplicity and reliability.",
+    "kscape_desc": "Where light meets sound. Integrated lighting and audio systems for seamless architecture. No longer look for speaker placments, just integrate the lights and the sound together without compromising the aesthetics and most importantly sound quality of the space.",
+    "karray_features": "Premium quality, Discreet design, Innovative arrays",
+    "kgear_features": "Versatile, High output, Accessible",
+    "kscape_features": "Light & Sound, Architectural, Immersive",
+    "view_products": "View Products"
+  },
+  "Catalogs": {
+    "title": "Product Catalogs",
+    "subtitle": "Explore our comprehensive range of products. Select a catalog to view it directly below.",
+    "view_pdf": "View PDF",
+    "placeholder_view": "Select a catalog to view"
+  },
+  "Projects": {
+    "title": "Featured Projects",
+    "all": "All",
+    "restaurant": "Restaurant",
+    "cafe": "Cafe",
+    "hotel": "Hotel",
+    "store": "Store",
+    "gallery": "Gallery",
+    "residential": "Residential",
+    "venues": "Venues",
+    "clubs": "Clubs",
+    "theatres": "Theatres",
+    "perfect_for": "Perfectly tailored audio for {app} environments.",
+    "no_projects": "No projects found for {filter}."
+  },
+  "Partners": {
+    "title": "Our Partners",
+    "subtitle": "We collaborate with industry leaders across the region. Select a country to view our local partners, or contact us to become one!"
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to elevate your audio experience? Contact our team for consultations, quotes, support and partnership inquiries",
+    "email_us": "Email Us",
+    "whatsapp": "WhatsApp",
+    "head_office": "Head Office",
+    "send_message": "Send us a message",
+    "full_name": "Full Name",
+    "email_address": "Email Address",
+    "message": "Message",
+    "button_sending": "Sending...",
+    "button_send": "Send Message",
+    "success_msg": "Message sent successfully! We'll be in touch."
+  },
+  "Footer": {
+    "description": "Distributing Premium Audio Solutions across Cyprus, Armenia, and beyond.",
+    "phone": "Phone:",
+    "address": "Address:",
+    "rights": "Zeal AV Solutions. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
