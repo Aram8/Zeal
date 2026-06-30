@@ -19,10 +19,10 @@ const partnersData: Record<string, { name: string, logo: string }[]> = {
     { name: "Partner 4", logo: "" }
   ],
   "Armenia": [
-    { name: "Partner 1", logo: "/partners/ZigZag.png" },
-    { name: "Partner 2", logo: "/partners/ZigZag.png" },
+    { name: "Partner 1", logo: "/partners/ZigZag Vector.svg" },
+    { name: "Partner 2", logo: "/partners/Audoo Logo.svg" },
     { name: "Partner 3", logo: "/partners/SAS.png" },
-    { name: "Partner 4", logo: "/partners/SAS FC.png" }
+    { name: "Partner 4", logo: "/partners/C2 Vector.svg" }
   ],
   // You can add data for the other countries here...
 };

@@ -10,37 +10,214 @@ export default function ProjectsSection() {
 
   const applications = [
     t("all"), t("restaurant"), t("cafe"), t("hotel"), t("store"), t("gallery"), t("residential"),
-    t("yacht"), t("venues"), t("clubs"), t("concert_halls"), t("theatres")
+    t("venues"), t("clubs"), t("theatres")
   ];
 
   const projects = [
-    { id: 1, title: "Alaska Restaurant", app: t("restaurant"), models: ["Premium Audio"], images: ["/projects/Alaska.jpg"] },
-    { id: 2, title: "Azura Restaurant", app: t("restaurant"), models: ["Premium Audio"], images: ["/projects/Azura.jpg"] },
-    { id: 3, title: "Hans & Franz Restaurant", app: t("restaurant"), models: ["Premium Audio"], images: ["/projects/Hans.jpg"] },
-    { id: 4, title: "Caramel Cafe", app: t("cafe"), models: ["Premium Audio"], images: ["/projects/Caramel.jpg"] },
-    { id: 5, title: "Ground Zero Cafe", app: t("cafe"), models: ["Premium Audio"], images: ["/projects/Ground Zero.jpg"] },
-    { id: 6, title: "Rolls Komitas Cafe", app: t("cafe"), models: ["Premium Audio"], images: ["/projects/Rolls.jpg"] },
-    { id: 7, title: "Rolls Dilijan Cafe", app: t("cafe"), models: ["Premium Audio"], images: ["/projects/Rolls Dilijan.jpg"] },
-    { id: 8, title: "SAS Mashtots", app: t("store"), models: ["Premium Audio"], images: ["/projects/SAS.jpg"] },
-    { id: 9, title: "Terra Restaurant", app: t("restaurant"), models: ["Premium Audio"], images: ["/projects/Terra.jpg"] },
-    { id: 10, title: "The Garden Cafe", app: t("cafe"), models: ["Premium Audio"], images: ["/projects/The Garden.jpg"] },
-    { id: 11, title: "Unicorn Cafe", app: t("cafe"), models: ["Premium Audio"], images: ["/projects/Unicorn.jpg"] },
-    { id: 12, title: "JAM Caffe", app: t("cafe"), models: ["Premium Audio"], images: ["/projects/JAM.jpg"] },
-    { id: 13, title: "Paulaner Teryan Restaurant", app: t("restaurant"), models: ["Premium Audio"], images: ["/projects/Paulaner.jpg"] },
-    { id: 14, title: "Paulaner Cascade Restaurant", app: t("restaurant"), models: ["Premium Audio"], images: ["/projects/Paulaner Cascade.jpg"] },
-    { id: 15, title: "HUNT Restaurant", app: t("restaurant"), models: ["Premium Audio"], images: ["/projects/HUNT.jpg"] },
-    { id: 16, title: "Bosch Store", app: t("store"), models: ["Premium Audio"], images: ["/projects/Bosch.jpg"] },
-    { id: 17, title: "Miele Store", app: t("store"), models: ["Premium Audio"], images: ["/projects/Miele.jpg"] },
-    { id: 18, title: "Two Arcs Gallery", app: t("gallery"), models: ["Premium Audio"], images: ["/projects/Two Arcs.jpg"] },
-    { id: 19, title: "Jijil Restaurant", app: t("restaurant"), models: ["Premium Audio"], images: ["/projects/Jijil.jpg"] },
-    { id: 20, title: "Anima Resort", app: t("hotel"), models: ["Premium Audio"], images: ["/projects/Anima.jpg"] },
-    { id: 21, title: "The Forest Tsagkhadzor Hotel", app: t("hotel"), models: ["Premium Audio"], images: ["/projects/Forest.jpg"] },
-    { id: 22, title: "IMTOON Dilijan Hotel", app: t("hotel"), models: ["Premium Audio"], images: ["/projects/IMTOON.jpg"] },
-    { id: 23, title: "Luxury Marina Yacht", app: t("yacht"), models: ["K-Array Anakonda", "K-Array Rumble"], images: ["/projects/Yacht.jpg"] },
-    { id: 24, title: "Downtown Cafe Acoustics", app: t("cafe"), models: ["KGEAR GF22", "KGEAR GS6"], images: ["/projects/Downtown.jpg"] },
-    { id: 25, title: "Grand Concert Hall", app: t("concert_halls"), models: ["K-Array Mugello", "K-Array Firenze"], images: ["/projects/Concert.jpg"] },
-    { id: 26, title: "Seaside Restaurant", app: t("restaurant"), models: ["KSCAPE Rail"], images: ["/projects/Seaside.jpg"] },
-    { id: 27, title: "Exclusive Nightclub", app: t("clubs"), models: ["K-Array Dragon", "K-Array Thunder"], images: ["/projects/Nightclub.jpg"] },
+    {
+
+      id: 1,
+      title: "Azura Restaurant",
+      app: t("restaurant"),
+      models: ["GF162 I", "GS12", "GA43"],
+      images: ["/projects/Azura.jpg"],
+      description: "Being the first cooperation in a long list of projects done by the creaters of Azura, it offers one of the finest Medeteranian kitchens in Yerevan. Interior design while being in light tones, never overwhelms as well as covered KGEAR subs with impressive punch during performances. This project is destroying traditional impressions of speaker visibility, never deflecting on power and quality.",
+      partnerLinks: []
+    },
+
+    {
+      id: 2,
+      title: "Alaska Restaurant",
+      app: t("restaurant"),
+      models: ["GF162 I", "GF82 I", "GF42 I", "GF4", "GA43", "GA201"],
+      images: ["/projects/Alaska.jpg"],
+      description: "Second on the list of cooperation with creators of Azura, is Alaska. Finest red wine, enhancing one of the best stake kitchens in Yerevan, inspired by the same impressive sound .",
+      partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
+    },
+
+    {
+      id: 3,
+      title: "Hans & Franz Restaurant",
+      app: t("restaurant"),
+      models: ["GF162 I", "GF82 I", "GF42 I", "GF4", "GA43", "GA201"],
+      images: ["/projects/Hans.jpg"],
+      description: "After a renovation, famous Azura restaurant became Hans&Franz. Design and vibe has been changed, but quality sound that never disappoints is still there.",
+      partnerLinks: []
+    },
+    {
+      id: 4,
+      title: "Caramel Cafe",
+      app: t("cafe"),
+      models: ["GF22", "GA201"],
+      images: ["/projects/Caramel.jpg"],
+      description: "In the heart of Yerevan's most busy and joyful street, Caramel Cafe offers a unique experience with its stylish interior and delicious cuisine. And to highlight that, KGEAR is there to provide best envirment for a nice both indoor and outdoor stay.",
+      partnerLinks: []
+    },
+    {
+      id: 5,
+      title: "Ground Zero Cafe",
+      app: t("cafe"),
+      models: ["KZ14", "KZ1", "KTR25", "KA02"],
+      images: ["/projects/Ground Zero.jpg"],
+      description: "Ground Zero is not only a cafe, but a community space. A place where you can meet, greet, work and chill. K-Array's smallest KZ1s provide almost invisible but immersive sound, while KGEARs portabe system is perfect for event's and speeches which are regular for a place as active as Ground Zero.",
+      partnerLinks: []
+    },
+
+    {
+      id: 6,
+      title: "Rolls Dilijan Cafe",
+      app: t("cafe"),
+      models: ["GF22", "GF42 I", "GS6", "GA201", "GM44L"],
+      images: ["/projects/Rolls Dilijan.jpg"],
+      description: "Roll into the world of tasty stylish food and cozy environment. KGEAR is there to provide the beats and vibes to fit the place.",
+      partnerLinks: []
+    },
+
+    {
+      id: 7,
+      title: "Rolls Komitas Cafe",
+      app: t("cafe"),
+      models: ["GF42 I", "GS6", "GA201"],
+      images: ["/projects/Rolls.jpg"],
+      description: "Rolling from Dilijan to Yerevan, you can find another spot with great food and even better sound. Just like Dilijan, come, eat, and have fun.",
+      partnerLinks: []
+    },
+
+    {
+      id: 8,
+      title: "SAS Mashtots",
+      app: t("store"),
+      models: ["Premium Audio"],
+      images: ["/projects/SAS.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 9,
+      title: "Terra Restaurant",
+      app: t("restaurant"),
+      models: ["KT2", "KU26", "KA18"],
+      images: ["/projects/Terra.jpg"],
+      description: "Being one of the first in Armenia to experience K-Array, Terra offers highly detailed decor, as well as a speacal accent on sound. With powerful Komannder line amplifiers driving small but efficent KT2 speakers, Terra can provide quality and efficency without compromise. Smart control over the tablet and detailed zoneing makes both staff and visitors happy and impressed.",
+      partnerLinks: []
+    },
+    {
+      id: 10,
+      title: "The Garden Cafe",
+      app: t("cafe"),
+      models: ["Premium Audio"],
+      images: ["/projects/The Garden.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 11,
+      title: "Unicorn Cafe",
+      app: t("cafe"),
+      models: ["Premium Audio"],
+      images: ["/projects/Unicorn.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 12,
+      title: "JAM Caffe",
+      app: t("cafe"),
+      models: ["Premium Audio"],
+      images: ["/projects/JAM.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 13,
+      title: "Paulaner Teryan Restaurant",
+      app: t("restaurant"),
+      models: ["Premium Audio"],
+      images: ["/projects/Paulaner.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 14,
+      title: "Paulaner Cascade Restaurant",
+      app: t("restaurant"),
+      models: ["Premium Audio"],
+      images: ["/projects/Paulaner Cascade.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 15,
+      title: "HUNT Restaurant",
+      app: t("restaurant"),
+      models: ["Premium Audio"],
+      images: ["/projects/HUNT.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 16,
+      title: "Bosch Store",
+      app: t("store"),
+      models: ["Premium Audio"],
+      images: ["/projects/Bosch.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 17,
+      title: "Miele Store",
+      app: t("store"),
+      models: ["Premium Audio"],
+      images: ["/projects/Miele.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 18,
+      title: "Two Arcs Gallery",
+      app: t("gallery"),
+      models: ["Premium Audio"],
+      images: ["/projects/Two Arcs.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 19,
+      title: "Jijil Restaurant",
+      app: t("restaurant"),
+      models: ["Premium Audio"],
+      images: ["/projects/Jijil.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 20,
+      title: "Anima Resort",
+      app: t("hotel"),
+      models: ["Premium Audio"],
+      images: ["/projects/Anima.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 21,
+      title: "The Forest Tsagkhadzor Hotel",
+      app: t("hotel"),
+      models: ["Premium Audio"],
+      images: ["/projects/Forest.jpg"],
+      description: "",
+      partnerLinks: []
+    },
+    {
+      id: 22,
+      title: "IMTOON Dilijan Hotel",
+      app: t("hotel"),
+      models: ["Premium Audio"],
+      images: ["/projects/IMTOON.jpg"],
+      description: "",
+      partnerLinks: []
+    }
   ];
 
   const [filter, setFilter] = useState(t("all"));
@@ -129,9 +306,32 @@ export default function ProjectsSection() {
                 ))}
               </div>
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <div>
+                <div className="max-w-3xl">
                   <h3 className="text-3xl md:text-4xl font-extrabold mb-3 tracking-tight">{currentProject.title}</h3>
-                  <p className="text-gray-500 text-lg">{t("perfect_for", { app: currentProject.app.toLowerCase() })}</p>
+                  <p className="text-gray-500 text-lg mb-4">{t("perfect_for", { app: currentProject.app.toLowerCase() })}</p>
+
+                  {/* Optional Description */}
+                  {currentProject.description && (
+                    <p className="text-gray-700 leading-relaxed mb-4">{currentProject.description}</p>
+                  )}
+
+                  {/* Optional Partner Links */}
+                  {currentProject.partnerLinks && currentProject.partnerLinks.length > 0 && (
+                    <div className="flex items-center flex-wrap gap-2 mt-4">
+                      <span className="text-sm text-gray-400 font-bold uppercase tracking-wider">Partners:</span>
+                      {currentProject.partnerLinks.map((partner, pIdx) => (
+                        <a
+                          key={pIdx}
+                          href={partner.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-sm font-bold text-black hover:text-gray-500 underline decoration-2 underline-offset-4 transition-colors"
+                        >
+                          {partner.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {currentProject.models.map(model => (
