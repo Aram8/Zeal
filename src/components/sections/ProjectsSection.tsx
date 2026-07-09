@@ -30,7 +30,7 @@ export default function ProjectsSection() {
       title: "Alaska",
       app: t("restaurant"),
       models: ["GF162 I", "GF82 I", "GF42 I", "GF4", "GA43", "GA201"],
-      images: ["/projects/Alaska.jpg", "/projects/Alaska.jpg", "/projects/Alaska.jpg"],
+      images: ["/projects/Alaska 1.jpeg", "/projects/Alaska 2.jpeg", "/projects/Alaska 3.jpeg"],
       description: "Second on the list of cooperation with creators of Azura, is Alaska. Finest red wine, enhancing one of the best stake kitchens in Yerevan, inspired by the same impressive sound. Dark tones and warm atmosphere is very descriptive of this place, and metallic and wood decor is never interrupted with almost invisible GF line black speakers and hidden GS line 12 Inch subwoofers. Complete zone control, let's the management decide the volume and tone of private room and other zones.",
       partnerLinks: [{ name: "MBG Group Alaska", url: "https://mbgroup.am/alaska" }, { name: "Alaska", url: "https://www.instagram.com/alaska_mbg/" }]
     },
@@ -49,7 +49,7 @@ export default function ProjectsSection() {
       title: "Caramel Cafe",
       app: t("cafe"),
       models: ["GF22", "GA201"],
-      images: ["/projects/Caramel.jpg", "/projects/Caramel.jpg", "/projects/Caramel.jpg"],
+      images: ["/projects/Caramel 1.jpg", "/projects/Caramel 2.jpg", "/projects/Caramel 3.jpg"],
       description: "In the center of Yerevan's busiest and most joyful street, Saryan street, Caramel Cafe offers a unique experience with its stylish interior and delicious cuisine. No matter just a coffee break, or a dinner, you can always stop by and be welcomed by the hospital stuff and high quality sound. You can sit inside, sit outside, or even have a cup of Caramel and experience the fancy beats when passing at winters. KGEAR system even without a dedicated sub, provides a full and even coverage.",
       partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }, { name: "Caramel Cafe", url: "https://www.instagram.com/caramelcafe.yvn/" }]
     },
