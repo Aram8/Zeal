@@ -333,15 +333,13 @@ export default function ProjectsSection() {
               </div>
 
               {/* Preload adjacent project images for instant loading */}
+              {/* Preload ALL project images for instant loading anywhere */}
               <div className="hidden">
-                {filteredProjects.length > 1 && [
-                  filteredProjects[(currentIndex + 1) % filteredProjects.length],
-                  filteredProjects[(currentIndex - 1 + filteredProjects.length) % filteredProjects.length]
-                ].map((proj, pIdx) => (
+                {filteredProjects.map((proj, pIdx) => (
                   proj?.images.map((img, i) => (
                     typeof img === 'string' && (
                       <Image 
-                        key={`preload-${pIdx}-${i}`} 
+                        key={`preload-all-${pIdx}-${i}`} 
                         src={img} 
                         alt="preload" 
                         fill 
