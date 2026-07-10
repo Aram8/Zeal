@@ -331,6 +331,27 @@ export default function ProjectsSection() {
                   </div>
                 ))}
               </div>
+
+              {/* Preload adjacent project images for instant loading */}
+              <div className="hidden">
+                {filteredProjects.length > 1 && [
+                  filteredProjects[(currentIndex + 1) % filteredProjects.length],
+                  filteredProjects[(currentIndex - 1 + filteredProjects.length) % filteredProjects.length]
+                ].map((proj, pIdx) => (
+                  proj?.images.map((img, i) => (
+                    typeof img === 'string' && (
+                      <Image 
+                        key={`preload-${pIdx}-${i}`} 
+                        src={img} 
+                        alt="preload" 
+                        fill 
+                        sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
+                        priority 
+                      />
+                    )
+                  ))
+                ))}
+              </div>
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div className="max-w-3xl">
                   <h3 className="text-3xl md:text-4xl font-extrabold mb-3 tracking-tight">{currentProject.title}</h3>
