@@ -15,18 +15,36 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-
       id: 1,
+      title: "Terra Restaurant",
+      app: t("restaurant"),
+      models: ["KT2", "KU26", "KA18"],
+      images: ["/projects/Terra 1.JPG", "/projects/Terra 2.jpg", "/projects/Terra 3.JPG"],
+      description: "Being one of the first in Armenia to experience K-Array, Terra offers highly detailed decor, as well as a special accent on sound. With powerful Komannder line amplifiers driving small but efficient  KT2 speakers, Terra can provide quality and efficiency without compromise. Violin, Saxophone, Guitars and Pianos, no longer require special equipment, just connecting them to our system provides even, excellent and high quality coverage, wherever you sit and whatever enjoy.",
+      partnerLinks: [{ name: "Terra", url: "https://www.instagram.com/terra_restaurant__/" },]
+    },
+    {
+      id: 2,
+      title: "Terra Outdoors",
+      app: t("restaurant"),
+      models: ["KT2", "KU210", "KTR25", "KA18"],
+      images: ["/projects/Terra Out 1.jpg", "/projects/Terra Out 2.jpg", "/projects/Terra Out 3.jpg"],
+      description: "Terra’s outdoor space is an ode to nature, thoughtfully designed to complement the restaurant’s elegant interior while offering a distinctly serene atmosphere. Enhanced by K-Array’s state-of-the-art sound system, the terrace comes alive with rich, immersive audio that perfectly matches the refined setting. Using high-excursion KU210 subwoofers and unobtrusive KT2 speakers, the system delivers balanced, detailed sound that envelops guests without disrupting the tranquil vibe. Whether enjoying a quiet afternoon or an evening gathering, the seamless integration of nature and technology creates an unparalleled outdoor dining experience.",
+      partnerLinks: [{ name: "Terra", url: "https://www.instagram.com/terra_restaurant__/" },]
+    },
+    {
+
+      id: 3,
       title: "Azura",
       app: t("restaurant"),
       models: ["GF162 I", "GS12", "GA43"],
-      images: ["/projects/Azura.jpg", "/projects/Azura.jpg", "/projects/Azura.jpg"],
+      images: ["/projects/Azura 1.jpg", "/projects/Azura 2.jpg", "/projects/Azura 3.jpg"],
       description: "Being the first cooperation in a long list of projects done by the creaters of Azura, it offers one of the finest Medeteranian kitchens in Yerevan.  Interior design while being in light tones, never overwhelms, and KGEAR's elegant white GF line and completly hidden GS subs provide an impressive punch during performances, without interrupting the interior flow. This project is shattering traditional impressions of speakers' visibility, without deflecting on power and quality.",
       partnerLinks: [{ name: "MBG Group Azura", url: "https://mbgroup.am/azura" }, { name: "Azura", url: "https://www.instagram.com/azura_mbg/" }]
     },
 
     {
-      id: 2,
+      id: 4,
       title: "Alaska",
       app: t("restaurant"),
       models: ["GF162 I", "GF82 I", "GF42 I", "GF4", "GA43", "GA201"],
@@ -36,29 +54,29 @@ export default function ProjectsSection() {
     },
 
     {
-      id: 3,
+      id: 5,
       title: "Hans & Franz",
       app: t("restaurant"),
       models: ["GF162 I", "GS12", "GA43"],
-      images: ["/projects/HF.jpg", "/projects/HF.jpg", "/projects/HF.jpg"],
+      images: ["/projects/Hans 1.jpg", "/projects/Hans 2.JPG", "/projects/Hans 3.jpg"],
       description: "Hans&Franz is back to remind how excellent of a place is was. After renovation, famous Azura restaurant became Hans&Franz. Design and vibe has been changed completely, as well as the main purpose of sound in the whole area. But quality sound was never under question. Interior, full of pretty intense and brutalist approaches, has a sharp and distinct sound, that never interferes with any conversation. KGEAR is here to only enhance the experiences you will have at this location.",
       partnerLinks: [{ name: "MBG Group Hans&Franz", url: "https://mbgroup.am/" }, { name: "Hans&Franz", url: "https://www.instagram.com/hansandfranz_mbg/" }]
     },
     {
-      id: 4,
+      id: 9,
       title: "Caramel Cafe",
       app: t("cafe"),
       models: ["GF22", "GA201"],
-      images: ["/projects/Caramel 1.jpg", "/projects/Caramel 2.jpg", "/projects/Caramel 3.jpg"],
+      images: ["/projects/Caramel 1.JPG", "/projects/Caramel 2.JPG", "/projects/Caramel 3.jpeg"],
       description: "In the center of Yerevan's busiest and most joyful street, Saryan street, Caramel Cafe offers a unique experience with its stylish interior and delicious cuisine. No matter just a coffee break, or a dinner, you can always stop by and be welcomed by the hospital stuff and high quality sound. You can sit inside, sit outside, or even have a cup of Caramel and experience the fancy beats when passing at winters. KGEAR system even without a dedicated sub, provides a full and even coverage.",
       partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }, { name: "Caramel Cafe", url: "https://www.instagram.com/caramelcafe.yvn/" }]
     },
     {
-      id: 5,
+      id: 10,
       title: "Ground Zero Cafe",
       app: t("cafe"),
       models: ["KZ14", "KZ1", "KTR25", "KA02", "GP8"],
-      images: ["/projects/Ground Zero.jpg", "/projects/Ground Zero.jpg", "/projects/Ground Zero.jpg"],
+      images: ["/projects/Ground Zero 1.jpg", "/projects/Ground Zero 2.jpg", "/projects/Ground Zero 3.jpeg"],
       description: "Continuing our integration into Saryan street, Ground Zero is the first commercial project in Armenia that experienced the KZ series K-Array. But it's not just a cafe, it's a community. A place where you can meet, greet, work and chill. K-Array's smallest KZs provide almost invisible but immersive sound. And KGEARs portable GP system is perfect for event's and speeches which are regular for a place as active as Ground Zero. Stop for a coffee or come to have talks and Q&As.",
       partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }, { name: "Ground Zero", url: "https://www.instagram.com/ground_zero_specialty_coffee/" }]
     },
@@ -75,11 +93,11 @@ export default function ProjectsSection() {
 
     {
       id: 7,
-      title: "Rolls Komitas Cafe",
+      title: "Rolls Komitas",
       app: t("cafe"),
       models: ["GF42 I", "GS6", "GA201"],
-      images: ["/projects/Rolls.jpg", "/projects/Rolls.jpg", "/projects/Rolls.jpg"],
-      description: "Rolling from Dilijan to Yerevan, you can find another spot with great food and even better sound. Just like Dilijan, come, eat, and have fun.",
+      images: ["/projects/Rolls EVN 1.jpg", "/projects/Rolls EVN 2.jpg", "/projects/Rolls EVN 3.jpg"],
+      description: "From the slopes of Dilijan to the heart of Yerevan, Rolls continues to delight with its signature blend of style and flavor. Now on Komitas Avenue, the experience is elevated with KGEAR's premium sound system. Designed to complement the vibrant atmosphere, the system delivers crisp, clear audio that enhances every moment—whether you're savoring a quiet coffee or enjoying a lively evening. With seamless coverage and exceptional sound quality, Rolls Komitas invites you to eat, relax, and immerse yourself in the perfect vibe.",
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
 
@@ -92,27 +110,19 @@ export default function ProjectsSection() {
       description: "",
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
+
     {
-      id: 9,
-      title: "Terra Restaurant",
-      app: t("restaurant"),
-      models: ["KT2", "KU26", "KA18"],
-      images: ["/projects/Terra.jpg", "/projects/Terra.jpg", "/projects/Terra.jpg"],
-      description: "Being one of the first in Armenia to experience K-Array, Terra offers highly detailed decor, as well as a speacal accent on sound. With powerful Komannder line amplifiers driving small but efficent KT2 speakers, Terra can provide quality and efficency without compromise. Smart control over the tablet and detailed zoneing makes both staff and visitors happy and impressed.",
-      partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
-    },
-    {
-      id: 10,
-      title: "The Garden Cafe",
+      id: 11,
+      title: "The Garden",
       app: t("cafe"),
       models: ["Premium Audio"],
-      images: ["/projects/The Garden.jpg", "/projects/The Garden.jpg", "/projects/The Garden.jpg"],
+      images: ["/projects/The Garden 1.JPG", "/projects/The Garden 2.JPG", "/projects/The Garden 3.JPG"],
       description: "",
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
-      id: 11,
-      title: "Unicorn Cafe",
+      id: 12,
+      title: "Unicorn",
       app: t("cafe"),
       models: ["Premium Audio"],
       images: ["/projects/Unicorn.jpg", "/projects/Unicorn.jpg", "/projects/Unicorn.jpg"],
@@ -120,26 +130,26 @@ export default function ProjectsSection() {
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
-      id: 12,
-      title: "JAM Caffe",
+      id: 13,
+      title: "JAM",
       app: t("cafe"),
       models: ["Premium Audio"],
-      images: ["/projects/JAM.jpg", "/projects/JAM.jpg", "/projects/JAM.jpg"],
-      description: "",
-      partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
-    },
-    {
-      id: 13,
-      title: "Paulaner Teryan Restaurant",
-      app: t("restaurant"),
-      models: ["Premium Audio"],
-      images: ["/projects/Paulaner.jpg", "/projects/Paulaner.jpg", "/projects/Paulaner.jpg"],
+      images: ["/projects/JAM 1.jpg", "/projects/JAM 2.jpg", "/projects/JAM 3.jpg"],
       description: "",
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
       id: 14,
-      title: "Paulaner Cascade Restaurant",
+      title: "Paulaner Teryan",
+      app: t("restaurant"),
+      models: ["Premium Audio"],
+      images: ["/projects/Paulaner Teryan 1.JPG", "/projects/Paulaner Teryan 2.JPG", "/projects/Paulaner Teryan 3.jpg"],
+      description: "",
+      partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
+    },
+    {
+      id: 15,
+      title: "Paulaner Cascade",
       app: t("restaurant"),
       models: ["Premium Audio"],
       images: ["/projects/Paulaner Cascade.jpg", "/projects/Paulaner Cascade.jpg", "/projects/Paulaner Cascade.jpg"],
@@ -147,7 +157,7 @@ export default function ProjectsSection() {
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
-      id: 15,
+      id: 16,
       title: "HUNT Restaurant",
       app: t("restaurant"),
       models: ["Premium Audio"],
@@ -156,7 +166,7 @@ export default function ProjectsSection() {
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
-      id: 16,
+      id: 17,
       title: "Red Fox",
       app: t("restaurant"),
       models: ["GH4", "GF162 I", "GF42 I", "GF4", "GS18", "GS6", "GU210", "GA43", "GA201"],
@@ -165,25 +175,25 @@ export default function ProjectsSection() {
       partnerLinks: [{ name: "Red Fox", url: "#" }]
     },
     {
-      id: 17,
+      id: 18,
       title: "Bosch Store",
       app: t("store"),
       models: ["Premium Audio"],
-      images: ["/projects/Bosch.jpg", "/projects/Bosch.jpg", "/projects/Bosch.jpg"],
-      description: "",
-      partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
-    },
-    {
-      id: 18,
-      title: "Miele Store",
-      app: t("store"),
-      models: ["Premium Audio"],
-      images: ["/projects/Miele.jpg", "/projects/Miele.jpg", "/projects/Miele.jpg"],
+      images: ["/projects/Bosch 1.JPG", "/projects/Bosch 2.JPG", "/projects/Bosch 3.JPG"],
       description: "",
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
       id: 19,
+      title: "Miele Store",
+      app: t("store"),
+      models: ["Premium Audio"],
+      images: ["/projects/Miele 1.JPG", "/projects/Miele 2.JPG", "/projects/Miele 3.JPG"],
+      description: "",
+      partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
+    },
+    {
+      id: 20,
       title: "Two Arcs Gallery",
       app: t("gallery"),
       models: ["Premium Audio"],
@@ -192,16 +202,16 @@ export default function ProjectsSection() {
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
-      id: 20,
-      title: "Jijil Restaurant",
+      id: 21,
+      title: "Jijil",
       app: t("restaurant"),
       models: ["Premium Audio"],
-      images: ["/projects/Jijil.jpg", "/projects/Jijil.jpg", "/projects/Jijil.jpg"],
+      images: ["/projects/Jijil 1.jpg", "/projects/Jijil 2.JPG", "/projects/Jijil 3.JPG"],
       description: "",
-      partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
+      partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }, { name: "Jijil", url: "https://www.instagram.com/jijil_tavern/" }]
     },
     {
-      id: 21,
+      id: 22,
       title: "Anima Resort",
       app: t("hotel"),
       models: ["Premium Audio"],
@@ -210,8 +220,8 @@ export default function ProjectsSection() {
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
-      id: 22,
-      title: "The Forest Tsagkhadzor Hotel",
+      id: 23,
+      title: "The Forest Tsagkhadzor",
       app: t("hotel"),
       models: ["Premium Audio"],
       images: ["/projects/Forest.jpg", "/projects/Forest.jpg", "/projects/Forest.jpg"],
@@ -219,7 +229,7 @@ export default function ProjectsSection() {
       partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
     },
     {
-      id: 23,
+      id: 24,
       title: "IMTOON Dilijan Hotel",
       app: t("hotel"),
       models: ["Premium Audio"],
