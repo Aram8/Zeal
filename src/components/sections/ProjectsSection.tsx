@@ -317,7 +317,14 @@ export default function ProjectsSection() {
                       }`}
                   >
                     {typeof img === 'string' ? (
-                      <Image src={img} alt={`${currentProject.title} Image ${i + 1}`} fill className="object-cover" />
+                      <Image 
+                        src={img} 
+                        alt={`${currentProject.title} Image ${i + 1}`} 
+                        fill 
+                        className="object-cover" 
+                        sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
+                        priority={i === 0}
+                      />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-gray-400 font-medium tracking-wide">Image {img}</div>
                     )}
