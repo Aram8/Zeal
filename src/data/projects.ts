@@ -85,7 +85,7 @@ export const projectsData: Project[] = [
     appKey: "cafe",
     models: ["GF22", "GF42 I", "GS6", "GA201", "GM44L"],
     images: ["/projects/Rolls Dilijan.jpg", "/projects/Rolls Dilijan.jpg", "/projects/Rolls Dilijan.jpg"],
-    description: "Roll into the world of tasty stylish food and cozy environment. KGEAR is there to provide the beats and vibes to fit the place.",
+    description: "Roll into the world of tasty, stylish food and a warm, cozy environment. KGEAR is there to provide the perfect beats and vibes to fit the space. Point source speakers from the GF line make the audio radiant when accompanied by powerful GS line subs. The natural wood interior and the welcoming staff make this venue one of the absolute best spots in Dilijan for a quick stop. Whether you are grabbing a quick coffee or a delicious meal, you are always warmly welcomed here.",
     partnerLinks: [{ name: "Rolls", url: "https://www.rolls.am" }]
   },
   {
@@ -94,7 +94,7 @@ export const projectsData: Project[] = [
     appKey: "cafe",
     models: ["GF42 I", "GS6", "GA201"],
     images: ["/projects/Rolls EVN 1.jpg", "/projects/Rolls EVN 2.jpg", "/projects/Rolls EVN 3.jpg"],
-    description: "From the slopes of Dilijan to the heart of Yerevan, Rolls continues to delight with its signature blend of style and flavor. Now on Komitas Avenue, the experience is elevated with KGEAR's premium sound system. Designed to complement the vibrant atmosphere, the system delivers crisp, clear audio that enhances every moment—whether you're savoring a quiet coffee or enjoying a lively evening. With seamless coverage and exceptional sound quality, Rolls Komitas invites you to eat, relax, and immerse yourself in the perfect vibe.",
+    description: "From the slopes of Dilijan to the heart of Yerevan, Rolls continues to delight with its signature blend of style and flavor. Now on Komitas Avenue, the experience is elevated with a premium KGEAR sound system. Designed to complement the vibrant atmosphere, it delivers crisp, clear audio that enhances every moment—whether you're savoring a quiet coffee or enjoying a lively evening. Rolls Komitas invites you to dine, relax, and immerse yourself in the truly perfect vibe.",
     partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
   },
   {
@@ -112,7 +112,7 @@ export const projectsData: Project[] = [
     appKey: "cafe",
     models: ["Premium Audio"],
     images: ["/projects/The Garden 1.JPG", "/projects/The Garden 2.JPG", "/projects/The Garden 3.JPG"],
-    description: "",
+    description: "The Garden is a welcoming family restaurant and beer house. As an official partner of Paulaner, it offers the finest brews paired with unforgettable flavors. The vibrant outdoor space is elevated by a premium KGEAR audio integration. Sleek GF line speakers combined with the powerful 12-inch GS subs deliver incredible acoustic clarity. Whether guests are enjoying background music or watching a thrilling stadium-like football match, the sound experience remains flawless.",
     partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
   },
   {
@@ -121,7 +121,7 @@ export const projectsData: Project[] = [
     appKey: "cafe",
     models: ["Premium Audio"],
     images: ["/projects/Unicorn.jpg", "/projects/Unicorn.jpg", "/projects/Unicorn.jpg"],
-    description: "",
+    description: "Unicorn Community Café is a space where innovators hang out and spread true startup culture. As forward-thinkers, they were among the very first to integrate a premium KGEAR audio system to achieve a highly special sound. The beautifully tuned setup provides soft, non-disturbing background music that perfectly fuels focus and daily creativity. Whether networking with peers or deep in thought, the acoustic environment flawlessly complements this modern, inspiring space.",
     partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
   },
   {
@@ -130,7 +130,7 @@ export const projectsData: Project[] = [
     appKey: "cafe",
     models: ["Premium Audio"],
     images: ["/projects/JAM 1.jpg", "/projects/JAM 2.jpg", "/projects/JAM 3.jpg"],
-    description: "",
+    description: "JAM is a cozy and warm cafe offering a delightful European fusion menu, with a true superpower for incredible breakfasts and coffee. Crafted by the creators of Terra Restaurant, the space features a similarly perfect yet delightfully lighter design. The audio is powered by simple yet highly efficient KGEAR GF4 full-range speakers. Perfectly enhanced by a compact GS line subwoofer, the acoustic environment is flawlessly balanced, making every visit a truly special one. ",
     partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
   },
   {
@@ -139,7 +139,7 @@ export const projectsData: Project[] = [
     appKey: "restaurant",
     models: ["Premium Audio"],
     images: ["/projects/Paulaner Teryan 1.JPG", "/projects/Paulaner Teryan 2.JPG", "/projects/Paulaner Teryan 3.jpg"],
-    description: "",
+    description: "Located on Teryan Street in the heart of Yerevan, Paulaner BeerHouse offers Germany's finest Weissbier and authentic cuisine. The inside features a flawless KGEAR audio setup, pairing impressive GU subwoofers with long, slim GF line arrays for rich, powerful sound. Outside, a unique stereo reversed image setup creates an immersive stadium fill, making this venue one of the absolute greatest and most popular places in all of Armenia to watch football and celebrate life.",
     partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
   },
   {
@@ -148,7 +148,7 @@ export const projectsData: Project[] = [
     appKey: "restaurant",
     models: ["Premium Audio"],
     images: ["/projects/Paulaner Cascade.jpg", "/projects/Paulaner Cascade.jpg", "/projects/Paulaner Cascade.jpg"],
-    description: "",
+    description: "The second project in the Paulaner chain brings Germany's number one Weissbier and authentic cuisine right next to the iconic Cascade in Yerevan. A flawlessly integrated KGEAR audio setup was designed to complement the warm atmosphere. Featuring shorter GF line arrays paired with highly impressive 6-inch GS subwoofers, the system delivers a truly rich tone. Every speaker is carefully hidden to never disrupt the existing decor and beautifully underline the overall feel.",
     partnerLinks: [{ name: "ZigZag", url: "#" }, { name: "Audoo", url: "#" }]
   },
   {
