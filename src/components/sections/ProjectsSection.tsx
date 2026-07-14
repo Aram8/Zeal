@@ -29,7 +29,7 @@ export default function ProjectsSection() {
       app: t("restaurant"),
       models: ["KT2", "KU210", "KTR25", "KA18"],
       images: ["/projects/Terra Out 1.jpg", "/projects/Terra Out 2.jpg", "/projects/Terra Out 3.jpg"],
-      description: "Terra’s outdoor space is an ode to nature, thoughtfully designed to complement the restaurant’s elegant interior while offering a distinctly serene atmosphere. Enhanced by K-Array’s state-of-the-art sound system, the terrace comes alive with rich, immersive audio that perfectly matches the refined setting. Using high-excursion KU210 subwoofers and unobtrusive KT2 speakers, the system delivers balanced, detailed sound that envelops guests without disrupting the tranquil vibe. Whether enjoying a quiet afternoon or an evening gathering, the seamless integration of nature and technology creates an unparalleled outdoor dining experience.",
+      description: "Terra's outdoor space is a serene ode to nature, perfectly complementing its elegant interior. Enhanced by a state-of-the-art K-Array sound system, the terrace features high-excursion KU210 subwoofers and unobtrusive KT2 speakers. This combination delivers rich, balanced, and immersive audio that envelops guests without disrupting the tranquil vibe. The seamless integration of pristine nature and premium AV technology generates an unparalleled outdoor dining experience.",
       partnerLinks: [{ name: "Terra", url: "https://www.instagram.com/terra_restaurant__/" },]
     },
     {
@@ -39,7 +39,7 @@ export default function ProjectsSection() {
       app: t("restaurant"),
       models: ["GF162 I", "GS12", "GA43"],
       images: ["/projects/Azura 1.jpg", "/projects/Azura 2.jpg", "/projects/Azura 3.jpg"],
-      description: "Being the first cooperation in a long list of projects done by the creaters of Azura, it offers one of the finest Medeteranian kitchens in Yerevan.  Interior design while being in light tones, never overwhelms, and KGEAR's elegant white GF line and completly hidden GS subs provide an impressive punch during performances, without interrupting the interior flow. This project is shattering traditional impressions of speakers' visibility, without deflecting on power and quality.",
+      description: "As the first project by the creators of Azura, it offers some of the finest Mediterranean food in Yerevan. The bright interior design never overwhelms the senses. KGEAR's elegant white GF line speakers and completely hidden GS subs deliver an impressive punch during live performances, without breaking the interior flow. This beautiful design shatters traditional ideas of bulky speaker visibility, proving you can have an invisible system without losing power or quality.",
       partnerLinks: [{ name: "MBG Group Azura", url: "https://mbgroup.am/azura" }, { name: "Azura", url: "https://www.instagram.com/azura_mbg/" }]
     },
 
@@ -49,7 +49,7 @@ export default function ProjectsSection() {
       app: t("restaurant"),
       models: ["GF162 I", "GF82 I", "GF42 I", "GF4", "GA43", "GA201"],
       images: ["/projects/Alaska 1.jpeg", "/projects/Alaska 2.jpeg", "/projects/Alaska 3.jpeg"],
-      description: "Second on the list of cooperation with creators of Azura, is Alaska. Finest red wine, enhancing one of the best stake kitchens in Yerevan, inspired by the same impressive sound. Dark tones and warm atmosphere is very descriptive of this place, and metallic and wood decor is never interrupted with almost invisible GF line black speakers and hidden GS line 12 Inch subwoofers. Complete zone control, let's the management decide the volume and tone of private room and other zones.",
+      description: "As the second collaboration with the creators of Azura, Alaska offers fine red wine and one of the best steak kitchens in Yerevan. The warm atmosphere and dark tones of the beautiful wood and metal decor remain fully uninterrupted. Almost invisible black GF line speakers and hidden 12-inch GS line subwoofers deliver impressive sound. Complete zone control allows the management to precisely adjust the exact audio volume and tone for the private room and all other zones.",
       partnerLinks: [{ name: "MBG Group Alaska", url: "https://mbgroup.am/alaska" }, { name: "Alaska", url: "https://www.instagram.com/alaska_mbg/" }]
     },
 
@@ -59,7 +59,7 @@ export default function ProjectsSection() {
       app: t("restaurant"),
       models: ["GF162 I", "GS12", "GA43"],
       images: ["/projects/Hans 1.jpg", "/projects/Hans 2.JPG", "/projects/Hans 3.jpg"],
-      description: "Hans&Franz is back to remind how excellent of a place is was. After renovation, famous Azura restaurant became Hans&Franz. Design and vibe has been changed completely, as well as the main purpose of sound in the whole area. But quality sound was never under question. Interior, full of pretty intense and brutalist approaches, has a sharp and distinct sound, that never interferes with any conversation. KGEAR is here to only enhance the experiences you will have at this location.",
+      description: "Hans&Franz is back to remind us how excellent of a place it was. After a major renovation, the famous Azura restaurant became Hans&Franz. The design and vibe have changed completely, as well as the main purpose of sound in the area. But audio quality was never in question. The new interior, full of intense and brutalist approaches, has a sharp and distinct sound that never interferes with any conversation. KGEAR is here to enhance every experience at this unique venue.",
       partnerLinks: [{ name: "MBG Group Hans&Franz", url: "https://mbgroup.am/" }, { name: "Hans&Franz", url: "https://www.instagram.com/hansandfranz_mbg/" }]
     },
     {
@@ -68,7 +68,7 @@ export default function ProjectsSection() {
       app: t("cafe"),
       models: ["GF22", "GA201"],
       images: ["/projects/Caramel 1.JPG", "/projects/Caramel 2.JPG", "/projects/Caramel 3.jpeg"],
-      description: "In the center of Yerevan's busiest and most joyful street, Saryan street, Caramel Cafe offers a unique experience with its stylish interior and delicious cuisine. No matter just a coffee break, or a dinner, you can always stop by and be welcomed by the hospital stuff and high quality sound. You can sit inside, sit outside, or even have a cup of Caramel and experience the fancy beats when passing at winters. KGEAR system even without a dedicated sub, provides a full and even coverage.",
+      description: "Located on Saryan Street, Yerevan's most joyful avenue, Caramel Cafe offers a unique experience with its stylish interior and delicious cuisine. Whether stopping for a quick coffee break or a full dinner, you will always be welcomed by the hospitable staff and beautiful sound. You can sit inside, relax outside, or simply enjoy the fancy beats while passing by in the winter. Even without dedicated subwoofers, the KGEAR audio system provides full and even sound coverage.",
       partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }, { name: "Caramel Cafe", url: "https://www.instagram.com/caramelcafe.yvn/" }]
     },
     {
@@ -77,7 +77,7 @@ export default function ProjectsSection() {
       app: t("cafe"),
       models: ["KZ14", "KZ1", "KTR25", "KA02", "GP8"],
       images: ["/projects/Ground Zero 1.jpg", "/projects/Ground Zero 2.jpg", "/projects/Ground Zero 3.jpeg"],
-      description: "Continuing our integration into Saryan street, Ground Zero is the first commercial project in Armenia that experienced the KZ series K-Array. But it's not just a cafe, it's a community. A place where you can meet, greet, work and chill. K-Array's smallest KZs provide almost invisible but immersive sound. And KGEARs portable GP system is perfect for event's and speeches which are regular for a place as active as Ground Zero. Stop for a coffee or come to have talks and Q&As.",
+      description: "Continuing our work on Saryan Street, Ground Zero is the first commercial project in Armenia to feature the K-Array KZ series. More than just a place, it is a vibrant community space to meet, work, and relax. K-Array's tiny KZ speakers provide an almost invisible yet deeply immersive sound. For their regular speeches and active events, the portable KGEAR GP system is a perfect match. Whether stopping by for a quick coffee or joining a lively Q&A, you are truly welcome.",
       partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }, { name: "Ground Zero", url: "https://www.instagram.com/ground_zero_specialty_coffee/" }]
     },
 
@@ -317,11 +317,11 @@ export default function ProjectsSection() {
                       }`}
                   >
                     {typeof img === 'string' ? (
-                      <Image 
-                        src={img} 
-                        alt={`${currentProject.title} Image ${i + 1}`} 
-                        fill 
-                        className="object-cover" 
+                      <Image
+                        src={img}
+                        alt={`${currentProject.title} Image ${i + 1}`}
+                        fill
+                        className="object-cover"
                         sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
                         priority={i === 0}
                       />
@@ -338,13 +338,13 @@ export default function ProjectsSection() {
                 {filteredProjects.map((proj, pIdx) => (
                   proj?.images.map((img, i) => (
                     typeof img === 'string' && (
-                      <Image 
-                        key={`preload-all-${pIdx}-${i}`} 
-                        src={img} 
-                        alt="preload" 
-                        fill 
+                      <Image
+                        key={`preload-all-${pIdx}-${i}`}
+                        src={img}
+                        alt="preload"
+                        fill
                         sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
-                        priority 
+                        priority
                       />
                     )
                   ))

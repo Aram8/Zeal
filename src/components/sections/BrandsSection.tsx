@@ -7,7 +7,7 @@ export default function BrandsSection() {
   const brands = [
     {
       name: "K-Array",
-      logo: "/K-array.jpg",
+      logo: "/K-Array.jpg",
       description: t("karray_desc"),
       features: t("karray_features").split(", "),
       link: "https://www.k-array.com/en/products?brand=k-array"
@@ -39,7 +39,7 @@ export default function BrandsSection() {
           {/* Inner decorative frame on hover */}
           <div className="absolute inset-4 border border-transparent group-hover:border-white/20 transition-colors duration-500 rounded-lg pointer-events-none" />
 
-          <a 
+          <a
             href={brand.link}
             target="_blank"
             rel="noopener noreferrer"
