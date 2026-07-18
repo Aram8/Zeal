@@ -47,7 +47,7 @@ export const projectsData: Project[] = [
     id: 4,
     title: "Alaska",
     appKey: "restaurant",
-    models: ["GF162 I", "GF82 I", "GF42 I", "GS12", "GA43", "GA201"],
+    models: ["GF162 I", "GF42 I", "GS12", "GA43"],
     images: ["/projects/Alaska 1.JPEG", "/projects/Alaska 2.JPEG", "/projects/Alaska 3.JPEG"],
     description: "As the second collaboration with the creators of Azura, Alaska offers fine red wine and one of the best steak kitchens in Yerevan. The warm atmosphere and dark tones of the beautiful wood and metal decor remain fully uninterrupted. Almost invisible black GF line speakers and hidden 12-inch GS line subwoofers deliver impressive sound. Complete zone control allows the management to precisely adjust the exact audio volume and tone for the private room and all other zones.",
     partnerLinks: [{ name: "MBG Group Alaska", url: "https://mbgroup.am/alaska" }, { name: "Alaska", url: "https://www.instagram.com/alaska_mbg/" }]

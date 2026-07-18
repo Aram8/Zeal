@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const countries = [
-  "Cyprus", "Armenia", "Georgia", "Kazakhstan", "Uzbekistan", "Kyrgyzstan", "Turkmenistan", "Tajikistan"
+  "Cyprus", "Armenia", "Georgia", "Kazakhstan", "Uzbekistan", /*"Kyrgyzstan", "Turkmenistan", "Tajikistan"*/
 ];
 
 // Define your partners per country here. 
@@ -19,10 +19,11 @@ const partnersData: Record<string, { name: string, logo: string }[]> = {
     { name: "Partner 4", logo: "" }
   ],
   "Armenia": [
-    { name: "Partner 1", logo: "/partners/ZigZag Vector.svg" },
-    { name: "Partner 2", logo: "/partners/Audoo Logo.svg" },
-    { name: "Partner 3", logo: "/partners/SAS.png" },
-    { name: "Partner 4", logo: "/partners/C2 Vector.svg" }
+    { name: "ZigZag", logo: "/partners/ZigZag Vector.svg" },
+    { name: "Audoo", logo: "/partners/Audoo Logo.svg" },
+    { name: "SAS", logo: "/partners/SAS.png" },
+    { name: "C2", logo: "/partners/C2 Vector.svg" },
+    { name: "MBG", logo: "/partners/MBG.png" },
   ],
   // You can add data for the other countries here...
 };
