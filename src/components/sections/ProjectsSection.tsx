@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { applicationKeys, projectsData } from "@/data/projects";
 import type { AppKey } from "@/data/projects";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ProjectsSection() {
   const t = useTranslations("Projects");
@@ -79,84 +80,93 @@ export default function ProjectsSection() {
             </div>
 
             {/* Project Content */}
-            <div className="group">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                {currentProject.images.map((img, i) => (
-                  <div
-                    key={i}
-                    className={`bg-gray-100 rounded-lg overflow-hidden border border-black/5 group-hover:border-black/20 transition-colors duration-500 relative ${i === 0 ? 'md:col-span-2 md:row-span-2 h-48 md:h-[28rem]' : 'col-span-1 h-32 md:h-[13.5rem]'
-                      }`}
-                  >
-                    {typeof img === 'string' ? (
-                      <Image
-                        src={img}
-                        alt={`${currentProject.title} Image ${i + 1}`}
-                        fill
-                        className="object-cover"
-                        sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
-                        priority={i === 0}
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-gray-400 font-medium tracking-wide">Image {img}</div>
-                    )}
-                  </div>
-                ))}
-              </div>
-
-              {/* Preload adjacent project images for instant loading */}
-              {/* Preload ALL project images for instant loading anywhere */}
-              <div className="hidden">
-                {filteredProjects.map((proj, pIdx) => (
-                  proj?.images.map((img, i) => (
-                    typeof img === 'string' && (
-                      <Image
-                        key={`preload-all-${pIdx}-${i}`}
-                        src={img}
-                        alt="preload"
-                        fill
-                        sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
-                        priority
-                      />
-                    )
-                  ))
-                ))}
-              </div>
-              <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <div className="max-w-3xl">
-                  <h3 className="text-3xl md:text-4xl font-extrabold mb-3 tracking-tight">{currentProject.title}</h3>
-
-                  {/* Optional Description */}
-                  {currentProject.description && (
-                    <p className="text-gray-700 leading-relaxed mb-4">{currentProject.description}</p>
-                  )}
-
-                  {/* Optional Partner Links */}
-                  {currentProject.partnerLinks && currentProject.partnerLinks.length > 0 && (
-                    <div className="flex items-center flex-wrap gap-2 mt-4">
-                      <span className="text-sm text-gray-400 font-bold uppercase tracking-wider">Partners:</span>
-                      {currentProject.partnerLinks.map((partner, pIdx) => (
-                        <a
-                          key={pIdx}
-                          href={partner.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-sm font-bold text-black hover:text-gray-500 underline decoration-2 underline-offset-4 transition-colors"
-                        >
-                          {partner.name}
-                        </a>
-                      ))}
+            <AnimatePresence mode="wait">
+              <motion.div 
+                key={currentProject.id}
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -15 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                className="group"
+              >
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                  {currentProject.images.map((img, i) => (
+                    <div
+                      key={i}
+                      className={`bg-gray-100 rounded-lg overflow-hidden border border-black/5 group-hover:border-black/20 transition-colors duration-500 relative ${i === 0 ? 'md:col-span-2 md:row-span-2 h-48 md:h-[28rem]' : 'col-span-1 h-32 md:h-[13.5rem]'
+                        }`}
+                    >
+                      {typeof img === 'string' ? (
+                        <Image
+                          src={img}
+                          alt={`${currentProject.title} Image ${i + 1}`}
+                          fill
+                          className="object-cover"
+                          sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
+                          priority={i === 0}
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-gray-400 font-medium tracking-wide">Image {img}</div>
+                      )}
                     </div>
-                  )}
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {currentProject.models.map(model => (
-                    <span key={model} className="text-sm font-bold px-4 py-2 bg-black text-white rounded-md uppercase tracking-wide">
-                      {model}
-                    </span>
                   ))}
                 </div>
-              </div>
-            </div>
+
+                {/* Preload adjacent project images for instant loading */}
+                {/* Preload ALL project images for instant loading anywhere */}
+                <div className="hidden">
+                  {filteredProjects.map((proj, pIdx) => (
+                    proj?.images.map((img, i) => (
+                      typeof img === 'string' && (
+                        <Image
+                          key={`preload-all-${pIdx}-${i}`}
+                          src={img}
+                          alt="preload"
+                          fill
+                          sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
+                          priority
+                        />
+                      )
+                    ))
+                  ))}
+                </div>
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                  <div className="max-w-3xl">
+                    <h3 className="text-3xl md:text-4xl font-extrabold mb-3 tracking-tight">{currentProject.title}</h3>
+
+                    {/* Optional Description */}
+                    {currentProject.description && (
+                      <p className="text-gray-700 leading-relaxed mb-4">{currentProject.description}</p>
+                    )}
+
+                    {/* Optional Partner Links */}
+                    {currentProject.partnerLinks && currentProject.partnerLinks.length > 0 && (
+                      <div className="flex items-center flex-wrap gap-2 mt-4">
+                        <span className="text-sm text-gray-400 font-bold uppercase tracking-wider">Partners:</span>
+                        {currentProject.partnerLinks.map((partner, pIdx) => (
+                          <a
+                            key={pIdx}
+                            href={partner.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-sm font-bold text-black hover:text-gray-500 underline decoration-2 underline-offset-4 transition-colors"
+                          >
+                            {partner.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {currentProject.models.map(model => (
+                      <span key={model} className="text-sm font-bold px-4 py-2 bg-black text-white rounded-md uppercase tracking-wide">
+                        {model}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
 
             {/* Dots */}
             <div className="flex justify-center gap-2 mt-12">

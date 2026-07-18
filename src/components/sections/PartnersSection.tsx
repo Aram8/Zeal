@@ -13,10 +13,10 @@ const countries = [
 // For example, if you place 'sony.png' in public/, use "/sony.png" as the logo path.
 const partnersData: Record<string, { name: string, logo: string, url?: string }[]> = {
   "Cyprus": [
-    { name: "Partner 1", logo: "" },
-    { name: "Partner 2", logo: "" },
-    { name: "Partner 3", logo: "" },
-    { name: "Partner 4", logo: "" }
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" }
   ],
   "Armenia": [
     { name: "ZigZag", logo: "/partners/ZigZag Vector.svg", url: "https://www.zigzag.am" },
