@@ -11,7 +11,7 @@ const countries = [
 // Define your partners per country here. 
 // Place your logo image files into the 'public' folder of the project.
 // For example, if you place 'sony.png' in public/, use "/sony.png" as the logo path.
-const partnersData: Record<string, { name: string, logo: string }[]> = {
+const partnersData: Record<string, { name: string, logo: string, url?: string }[]> = {
   "Cyprus": [
     { name: "Partner 1", logo: "" },
     { name: "Partner 2", logo: "" },
@@ -19,11 +19,11 @@ const partnersData: Record<string, { name: string, logo: string }[]> = {
     { name: "Partner 4", logo: "" }
   ],
   "Armenia": [
-    { name: "ZigZag", logo: "/partners/ZigZag Vector.svg" },
-    { name: "Audoo", logo: "/partners/Audoo Logo.svg" },
-    { name: "SAS", logo: "/partners/SAS.png" },
-    { name: "C2", logo: "/partners/C2 Vector.svg" },
-    { name: "MBG", logo: "/partners/MBG.png" },
+    { name: "ZigZag", logo: "/partners/ZigZag Vector.svg", url: "https://www.zigzag.am" },
+    { name: "Audoo", logo: "/partners/Audoo Logo.svg", url: "https://audoo.am" },
+    { name: "SAS", logo: "/partners/SAS.png", url: "https://www.sas.am" },
+    { name: "C2", logo: "/partners/C2 Vector.svg", url: "https://c-2.am" },
+    { name: "MBG", logo: "/partners/MBG.png", url: "https://mbgroup.am" },
   ],
   // You can add data for the other countries here...
 };
@@ -65,18 +65,34 @@ export default function PartnersSection() {
           <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
 
           <div className="animate-marquee flex items-center gap-12 whitespace-nowrap">
-            {[...(partnersData[activeCountry] || []), ...(partnersData[activeCountry] || [])].map((partner, idx) => (
-              <div
-                key={`${activeCountry}-${idx}`}
-                className="relative flex items-center justify-center w-40 h-24 rounded-lg bg-gray-50 border border-gray-200 hover:border-black hover:bg-white transition-colors duration-300 shrink-0 shadow-sm overflow-hidden"
-              >
-                {partner.logo ? (
-                  <Image src={partner.logo} alt={partner.name} fill className="object-contain p-4" />
-                ) : (
-                  <span className="text-gray-400 text-sm font-bold uppercase tracking-widest">{partner.name}</span>
-                )}
-              </div>
-            ))}
+            {[...(partnersData[activeCountry] || []), ...(partnersData[activeCountry] || [])].map((partner, idx) => {
+              const content = partner.logo ? (
+                <Image src={partner.logo} alt={partner.name} fill className="object-contain p-4" />
+              ) : (
+                <span className="text-gray-400 text-sm font-bold uppercase tracking-widest">{partner.name}</span>
+              );
+
+              const className = "relative flex items-center justify-center w-40 h-24 rounded-lg bg-gray-50 border border-gray-200 hover:border-black hover:bg-white transition-colors duration-300 shrink-0 shadow-sm overflow-hidden";
+
+              return partner.url ? (
+                <a
+                  key={`${activeCountry}-${idx}`}
+                  href={partner.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                >
+                  {content}
+                </a>
+              ) : (
+                <div
+                  key={`${activeCountry}-${idx}`}
+                  className={className}
+                >
+                  {content}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
