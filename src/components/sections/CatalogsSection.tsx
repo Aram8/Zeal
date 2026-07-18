@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import dynamic from 'next/dynamic';
+import { motion, AnimatePresence } from "framer-motion";
 
 const PDFViewer = dynamic(() => import('../PDFViewer'), {
   ssr: false,
@@ -26,6 +27,20 @@ export default function CatalogsSection() {
   useEffect(() => {
     setPageNumber(1);
   }, [activeCatalog]);
+
+  // Keyboard navigation for PDF
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") {
+        setPageNumber(prev => Math.min(Math.max(1, prev - 1), numPages));
+      } else if (e.key === "ArrowRight") {
+        setPageNumber(prev => Math.min(Math.max(1, prev + 1), numPages));
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [numPages]);
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
     setNumPages(numPages);
@@ -70,8 +85,7 @@ export default function CatalogsSection() {
             <div className="absolute bottom-0 right-0 w-8 h-8 border-l-2 border-t-2 border-black" />
 
             {/* Viewer Controls (Header) */}
-            <div className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200 z-10">
-              <div className="font-bold text-lg truncate max-w-[200px] sm:max-w-xs">{activeCatalog.name}</div>
+            <div className="flex justify-end items-center mb-6 pb-4 border-b border-gray-200 z-10">
               {numPages > 0 && (
                 <div className="text-sm font-medium">Page {pageNumber} of {numPages}</div>
               )}
@@ -94,12 +108,23 @@ export default function CatalogsSection() {
               </div>
 
               {/* PDF Document */}
-              <div className="flex-grow h-full overflow-auto flex justify-center py-4">
-                <PDFViewer
-                  file={activeCatalog.file}
-                  pageNumber={pageNumber}
-                  onDocumentLoadSuccess={onDocumentLoadSuccess}
-                />
+              <div className="flex-grow h-full overflow-auto flex justify-center py-4 relative">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={`${activeCatalog.id}-${pageNumber}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="flex justify-center w-full"
+                  >
+                    <PDFViewer
+                      file={activeCatalog.file}
+                      pageNumber={pageNumber}
+                      onDocumentLoadSuccess={onDocumentLoadSuccess}
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
 
               {/* Next Arrow - Right Side */}

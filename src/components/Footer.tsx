@@ -22,12 +22,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t-2 border-black/5 text-sm font-bold uppercase tracking-wider text-gray-400 flex flex-col md:flex-row justify-between gap-4">
+      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t-2 border-black/5 text-sm font-bold uppercase tracking-wider text-gray-400 flex justify-center md:justify-start gap-4">
         <p>&copy; {new Date().getFullYear()} {t("rights")}</p>
-        <div className="flex gap-6">
-          <a href="#" className="hover:text-black transition-colors">{t("privacy")}</a>
-          <a href="#" className="hover:text-black transition-colors">{t("terms")}</a>
-        </div>
       </div>
     </footer>
   );

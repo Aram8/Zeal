@@ -13,6 +13,8 @@ const countries = [
 // For example, if you place 'sony.png' in public/, use "/sony.png" as the logo path.
 const partnersData: Record<string, { name: string, logo: string, url?: string }[]> = {
   "Cyprus": [
+    { name: "", logo: "", url: "" },
+    { name: "", logo: "" },
     { name: "", logo: "" },
     { name: "", logo: "" },
     { name: "", logo: "" },
@@ -25,6 +27,15 @@ const partnersData: Record<string, { name: string, logo: string, url?: string }[
     { name: "C2", logo: "/partners/C2 Vector.svg", url: "https://c-2.am" },
     { name: "MBG", logo: "/partners/MBG.png", url: "https://mbgroup.am" },
   ],
+  "Georgia": [
+    { name: "Zigie", logo: "/partners/Zigie.png", url: "https://zigie.ge/en" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" }
+  ]
   // You can add data for the other countries here...
 };
 
@@ -59,13 +70,22 @@ export default function PartnersSection() {
         </div>
 
         {/* Scrolling Partners Carousel */}
-        <div className="relative w-full flex overflow-x-hidden py-8">
+        <div className="relative w-full flex overflow-x-hidden py-8 group">
           {/* Fading edges */}
           <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
           <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
 
-          <div className="animate-marquee flex items-center gap-12 whitespace-nowrap">
-            {[...(partnersData[activeCountry] || []), ...(partnersData[activeCountry] || [])].map((partner, idx) => {
+          {(() => {
+            const basePartners = partnersData[activeCountry] || [];
+            if (basePartners.length === 0) return null;
+
+            let displayPartners = [...basePartners];
+            // Duplicate enough times to ensure the set is wider than most screens
+            while (displayPartners.length < 15) {
+              displayPartners = [...displayPartners, ...basePartners];
+            }
+
+            const renderPartnerContent = (partner: typeof basePartners[0], idx: number, keyPrefix: string) => {
               const content = partner.logo ? (
                 <Image src={partner.logo} alt={partner.name} fill className="object-contain p-4" />
               ) : (
@@ -76,7 +96,7 @@ export default function PartnersSection() {
 
               return partner.url ? (
                 <a
-                  key={`${activeCountry}-${idx}`}
+                  key={`${keyPrefix}-${idx}`}
                   href={partner.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -86,14 +106,27 @@ export default function PartnersSection() {
                 </a>
               ) : (
                 <div
-                  key={`${activeCountry}-${idx}`}
+                  key={`${keyPrefix}-${idx}`}
                   className={className}
                 >
                   {content}
                 </div>
               );
-            })}
-          </div>
+            };
+
+            return (
+              <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused]">
+                {/* First Set */}
+                <div className="flex items-center gap-12 pr-12">
+                  {displayPartners.map((partner, idx) => renderPartnerContent(partner, idx, `set1-${activeCountry}`))}
+                </div>
+                {/* Second Set (Duplicate for seamless loop) */}
+                <div className="flex items-center gap-12 pr-12" aria-hidden="true">
+                  {displayPartners.map((partner, idx) => renderPartnerContent(partner, idx, `set2-${activeCountry}`))}
+                </div>
+              </div>
+            );
+          })()}
         </div>
       </div>
 
