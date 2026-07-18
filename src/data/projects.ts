@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
     id: 1,
     title: "Terra Restaurant",
     appKey: "restaurant",
-    models: ["KT2", "KU26", "GC6-RNB", "GC6-SQB", "KA18"],
+    models: ["KT2", "KU26", "GC6-RNB", "KA18"],
     images: ["/projects/Terra 1.JPG", "/projects/Terra 2.jpg", "/projects/Terra 3.JPG"],
     description: "Being one of the first in Armenia to experience K-Array, Terra offers highly detailed decor, as well as a special accent on sound. With powerful Komannder line amplifiers driving small but efficient  KT2 speakers, Terra can provide quality and efficiency without compromise. Violin, Saxophone, Guitars and Pianos, no longer require special equipment, just connecting them to our system provides even, excellent and high quality coverage, wherever you sit and whatever enjoy.",
     partnerLinks: [{ name: "Terra", url: "https://www.instagram.com/terra_restaurant__/" },]
@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
     id: 3,
     title: "Azura",
     appKey: "restaurant",
-    models: ["GF162 I", "GF42 I", "GS12", "GC3-RNW", "GA43"],
+    models: ["GF162 I", "GF42 I", "GS12", "GA43"],
     images: ["/projects/Azura 1.jpg", "/projects/Azura 2.jpg", "/projects/Azura 3.jpg"],
     description: "As the first project by the creators of Azura, it offers some of the finest Mediterranean food in Yerevan. The bright interior design never overwhelms the senses. KGEAR's elegant white GF line speakers and completely hidden GS subs deliver an impressive punch during live performances, without breaking the interior flow. This beautiful design shatters traditional ideas of bulky speaker visibility, proving you can have an invisible system without losing power or quality.",
     partnerLinks: [{ name: "MBG Group Azura", url: "https://mbgroup.am/azura" }, { name: "Azura", url: "https://www.instagram.com/azura_mbg/" }]
@@ -47,7 +47,7 @@ export const projectsData: Project[] = [
     id: 4,
     title: "Alaska",
     appKey: "restaurant",
-    models: ["GF162 I", "GF82 I", "GF42 I", "GF4", "GS12", "GS6", "GA43", "GA201"],
+    models: ["GF162 I", "GF82 I", "GF42 I", "GS12", "GA43", "GA201"],
     images: ["/projects/Alaska 1.JPEG", "/projects/Alaska 2.JPEG", "/projects/Alaska 3.JPEG"],
     description: "As the second collaboration with the creators of Azura, Alaska offers fine red wine and one of the best steak kitchens in Yerevan. The warm atmosphere and dark tones of the beautiful wood and metal decor remain fully uninterrupted. Almost invisible black GF line speakers and hidden 12-inch GS line subwoofers deliver impressive sound. Complete zone control allows the management to precisely adjust the exact audio volume and tone for the private room and all other zones.",
     partnerLinks: [{ name: "MBG Group Alaska", url: "https://mbgroup.am/alaska" }, { name: "Alaska", url: "https://www.instagram.com/alaska_mbg/" }]
@@ -56,7 +56,7 @@ export const projectsData: Project[] = [
     id: 5,
     title: "Hans & Franz",
     appKey: "restaurant",
-    models: ["GF162 I", "GF42 I", "GS12", "GC3-RNW", "GA43"],
+    models: ["GF162 I", "GF42 I", "GS12", "GA43"],
     images: ["/projects/Hans 1.jpg", "/projects/Hans 2.JPG", "/projects/Hans 3.jpg"],
     description: "Hans&Franz is back to remind us how excellent of a place it was. After a major renovation, the famous Azura restaurant became Hans&Franz. The design and vibe have changed completely, as well as the main purpose of sound in the area. But audio quality was never in question. The new interior, full of intense and brutalist approaches, has a sharp and distinct sound that never interferes with any conversation. KGEAR is here to enhance every experience at this unique venue.",
     partnerLinks: [{ name: "MBG Group Hans&Franz", url: "https://mbgroup.am/" }, { name: "Hans&Franz", url: "https://www.instagram.com/hansandfranz_mbg/" }]
@@ -146,7 +146,7 @@ export const projectsData: Project[] = [
     id: 18,
     title: "Bosch Store",
     appKey: "store",
-    models: ["KT2", "GF162 I", "GF42 I", "GU210", "GS6", "GA201", "GM44L"],
+    models: ["KT2", "GF162 I", "GF42 I", "GU210", "GA201", "GM44L"],
     images: ["/projects/Bosch 1.JPG", "/projects/Bosch 2.JPG", "/projects/Bosch 3.JPG"],
     description: "Collaborating with our great partners at ZigZag, we installed a premium KGEAR sound system for the Bosch brand store. The GF line speakers virtually blend into the sleek design of Bosch products, providing an immersive sound experience. Hidden behind the wall, powerful GU subwoofers deliver rich sound throughout the store and are ideal for special events. Controlled by a KGEAR analog matrix, the setup ensures a seamless audio experience for all customers and the staff.",
     partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }]
@@ -155,7 +155,7 @@ export const projectsData: Project[] = [
     id: 19,
     title: "Miele Store",
     appKey: "store",
-    models: ["KV52", "KV25", "KZ14", "KZ1", "KT2", "KU210", "KTR25", "KTR24", "KA04", "KA02"],
+    models: ["KV25", "KZ1", "KT2", "KU210", "KTR25", "KA04", "KA02"],
     images: ["/projects/Miele 1.JPG", "/projects/Miele 2.JPG", "/projects/Miele 3.JPG"],
     description: "Partnering with ZigZag, we elevated the premium Miele store with a sophisticated audio system. Showcasing how high-end sound perfectly complements luxury spaces, the setup features small KV line speakers and almost invisible KZ models. Rather than being hidden away, they are seamlessly integrated into the decor to highlight how beautifully they fit the environment. Paired with KTR and KU line subwoofers, this system delivers a deeply rich, flawless acoustic experience.",
     partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }]
@@ -173,7 +173,7 @@ export const projectsData: Project[] = [
     id: 21,
     title: "Jijil",
     appKey: "restaurant",
-    models: ["GP12A", "GP12", "GF162 I", "GF82 I", "GS6", "GA201"],
+    models: ["GP12A", "GF162 I", "GF82 I", "GS6", "GA201"],
     images: ["/projects/Jijil 1.jpg", "/projects/Jijil 2.JPG", "/projects/Jijil 3.JPG"],
     description: "Jijil restaurant features an interesting design, delicious Armenian cuisine, and a truly welcoming staff. A tailored KGEAR setup ensures flawless audio. The terrace pairs GF line speakers with small GS subs, while the balcony features GG line speakers. At the stage, a powerful GP line system delivers highly professional sound for live musicians. Perfectly adapted to the space, this setup guarantees that every guest enjoys an exceptional and fully immersive experience. ",
     partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }, { name: "Jijil", url: "https://www.instagram.com/jijil_tavern/" }]
