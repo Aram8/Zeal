@@ -19,7 +19,18 @@ const partnersData: Record<string, { name: string, logo: string, url?: string }[
     { name: "", logo: "" },
     { name: "", logo: "" },
     { name: "", logo: "" },
-    { name: "", logo: "" }
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
   ],
   "Armenia": [
     { name: "ZigZag", logo: "/partners/ZigZag Vector.svg", url: "https://www.zigzag.am" },
@@ -35,7 +46,12 @@ const partnersData: Record<string, { name: string, logo: string, url?: string }[
     { name: "", logo: "" },
     { name: "", logo: "" },
     { name: "", logo: "" },
-    { name: "", logo: "" }
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
+    { name: "", logo: "" },
   ]
   // You can add data for the other countries here...
 };
@@ -45,9 +61,36 @@ export default function PartnersSection() {
   const [activeCountry, setActiveCountry] = useState("Cyprus");
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
+
+  const checkScroll = () => {
+    if (scrollContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      // use - 1 to handle subpixel rounding
+      setCanScrollRight(Math.ceil(scrollLeft) < scrollWidth - clientWidth - 1);
+    }
+  };
+
+  // Re-check scroll buttons when country changes
+  useEffect(() => {
+    // Reset scroll position on country change
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({ left: 0 });
+    }
+    // slight delay to let DOM paint new items before calculating width
+    const timeout = setTimeout(checkScroll, 50);
+    window.addEventListener("resize", checkScroll);
+    return () => {
+      clearTimeout(timeout);
+      window.removeEventListener("resize", checkScroll);
+    };
+  }, [activeCountry]);
+
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 300;
+      const scrollAmount = scrollContainerRef.current.clientWidth * 0.8;
       scrollContainerRef.current.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth"
@@ -88,22 +131,27 @@ export default function PartnersSection() {
           <div className="absolute top-0 bottom-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
           {/* Navigation Arrows */}
-          <button
-            onClick={() => scroll("left")}
-            className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full shadow-lg hover:bg-black hover:text-white transition-all duration-300"
-          >
-            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
-          </button>
-          
-          <button
-            onClick={() => scroll("right")}
-            className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full shadow-lg hover:bg-black hover:text-white transition-all duration-300"
-          >
-            <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
-          </button>
+          {canScrollLeft && (
+            <button
+              onClick={() => scroll("left")}
+              className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full shadow-lg hover:bg-black hover:text-white transition-all duration-300"
+            >
+              <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
+            </button>
+          )}
 
-          <div 
+          {canScrollRight && (
+            <button
+              onClick={() => scroll("right")}
+              className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 z-20 p-2 md:p-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full shadow-lg hover:bg-black hover:text-white transition-all duration-300"
+            >
+              <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
+            </button>
+          )}
+
+          <div
             ref={scrollContainerRef}
+            onScroll={checkScroll}
             className="flex items-center gap-8 overflow-x-auto scroll-smooth px-12 md:px-24 py-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden"
             style={{ msOverflowStyle: 'none', scrollbarWidth: 'none' }}
           >
