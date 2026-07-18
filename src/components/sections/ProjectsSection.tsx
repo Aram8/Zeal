@@ -103,7 +103,7 @@ export default function ProjectsSection() {
                           fill
                           className="object-cover"
                           sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
-                          priority={i === 0}
+                          priority
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-gray-400 font-medium tracking-wide">Image {img}</div>
