@@ -10,7 +10,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/70 border-b border-gray-200 transition-colors">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="#hero" className="text-xl font-bold tracking-tighter flex items-center">
-          <Image src="/Logo Vector.svg" alt="Zeal AV" width={120} height={50} className="h-10 w-auto" priority quality={100} />
+          <Image src="/Logo Vector.svg" alt="Zeal AV" width={120} height={50} className="h-10 w-auto" priority />
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold">
           <Link href="#brands" className="hover:text-gray-500 transition-colors">{t("brands")}</Link>

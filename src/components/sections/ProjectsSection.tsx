@@ -114,7 +114,7 @@ export default function ProjectsSection() {
 
                 {/* Preload adjacent project images for instant loading */}
                 {/* Preload ALL project images for instant loading anywhere */}
-                <div className="hidden">
+                <div className="hidden relative">
                   {filteredProjects.map((proj, pIdx) => (
                     proj?.images.map((img, i) => (
                       typeof img === 'string' && (
