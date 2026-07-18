@@ -1,6 +1,6 @@
 export const applicationKeys = [
-  "all", "restaurant", "cafe", "hotel", "store", "gallery", "residential",
-  "venues", "clubs", "theatres"
+  "all", "restaurant", "cafe", /*"hotel", */ "store", "gallery", /*"residential",
+  "venues", "clubs", "theatres"*/
 ] as const;
 
 export type AppKey = typeof applicationKeys[number];
@@ -146,7 +146,7 @@ export const projectsData: Project[] = [
     id: 18,
     title: "Bosch Store",
     appKey: "store",
-    models: ["KT2", "GF162 I", "GF42 I", "GU210", "GA201", "GM44L"],
+    models: ["KT2", "GF162 I", "GU210", "GA43", "GM44L"],
     images: ["/projects/Bosch 1.JPG", "/projects/Bosch 2.JPG", "/projects/Bosch 3.JPG"],
     description: "Collaborating with our great partners at ZigZag, we installed a premium KGEAR sound system for the Bosch brand store. The GF line speakers virtually blend into the sleek design of Bosch products, providing an immersive sound experience. Hidden behind the wall, powerful GU subwoofers deliver rich sound throughout the store and are ideal for special events. Controlled by a KGEAR analog matrix, the setup ensures a seamless audio experience for all customers and the staff.",
     partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }]
@@ -155,7 +155,7 @@ export const projectsData: Project[] = [
     id: 19,
     title: "Miele Store",
     appKey: "store",
-    models: ["KV25", "KZ1", "KT2", "KU210", "KTR25", "KA04", "KA02"],
+    models: ["KV25", "KZ1", "KU210", "KTR25", "KA04"],
     images: ["/projects/Miele 1.JPG", "/projects/Miele 2.JPG", "/projects/Miele 3.JPG"],
     description: "Partnering with ZigZag, we elevated the premium Miele store with a sophisticated audio system. Showcasing how high-end sound perfectly complements luxury spaces, the setup features small KV line speakers and almost invisible KZ models. Rather than being hidden away, they are seamlessly integrated into the decor to highlight how beautifully they fit the environment. Paired with KTR and KU line subwoofers, this system delivers a deeply rich, flawless acoustic experience.",
     partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }]

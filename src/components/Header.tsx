@@ -19,7 +19,7 @@ export default function Header() {
           <Link href="#partners" className="hover:text-gray-500 transition-colors">{t("partners")}</Link>
         </nav>
         <div className="flex items-center gap-6">
-          <Link href="#contact" className="inline-flex items-center justify-center px-5 py-2.5 bg-black text-white text-sm font-bold uppercase tracking-wider rounded-md hover:bg-gray-800 transition-colors">
+          <Link href="#contact" className="hidden md:inline-flex items-center justify-center px-5 py-2.5 bg-black text-white text-sm font-bold uppercase tracking-wider rounded-md hover:bg-gray-800 transition-colors">
             {t("contact_now")}
           </Link>
           <LanguageSwitcher />
