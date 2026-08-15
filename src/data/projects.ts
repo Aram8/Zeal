@@ -183,7 +183,7 @@ export const projectsData: Project[] = [
     title: "HI-FI Audio Lounge",
     appKey: "store",
     models: ["KR802 II", "KR402 II", "GPX", "KY52"],
-    images: ["/projects/Hifi 1.jpg", "/projects/Hifi 2.JPG", "/projects/Hifi 3.JPG"],
+    images: ["/projects/Hifi 1.JPG", "/projects/Hifi 2.JPG", "/projects/Hifi 3.JPG"],
     description: "This high-end audio Lounge in ZigZag's Charents branch, offers a truly impressive selection of audio products. The KGEAR setup, featuring the powerful GPX system, K-Array's multiple systems including huge and efficient KR802 I and portable but very impressive KR402 II, creates an incredibly rich soundstage. In this enviroment of high-end audio products, the guests can enjoy an exceptional and fully immersive experience with the best sound, with immediate assistance.   ",
     partnerLinks: [{ name: "ZigZag", url: "https://www.zigzag.am" }]
   },
